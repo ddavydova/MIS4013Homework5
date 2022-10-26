@@ -1,6 +1,7 @@
 <?php include("header.php");?>
 <?php include("links.php");?>
 
+<div style=align:center>
 <br>
 <br>
 <audio src="https://www.soundjay.com/buttons/sounds/button-4.mp3" id="myAudio"></audio>
@@ -18,5 +19,6 @@
       document.getElementById("audioStatus").innerHTML="Audio Paused";	
      }
    </script>
+</div>
 
 <?php include("footer.php");?>
