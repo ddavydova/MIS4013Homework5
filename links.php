@@ -1,4 +1,4 @@
-<div class="container display-4">
+<div class="container display-5">
 	<ul class="nav nav-pills nav-fill">
           <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php">Function 1</a>
