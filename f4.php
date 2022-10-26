@@ -2,8 +2,8 @@
 <?php include("links.php");?>
 
 <title>Display random images</title>   
-</head>  
-  
+
+<body>
 <script>  
 function displayRandomImages()   
 {  
@@ -63,6 +63,7 @@ function displayRandomImages()
   document.body.appendChild(newImage);  
 }  
 </script>  
+</body>
   
 <div>  
 <center>  
