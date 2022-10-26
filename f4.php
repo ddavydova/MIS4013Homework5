@@ -1,9 +1,14 @@
 <?php include("header.php");?>
 <?php include("links.php");?>
 
-<title>Display random images</title>   
-
-<body>
+<title>Display random images</title>  
+<style>  
+body {  
+margin-top: 30px;  
+}  
+</style>   
+</head>  
+  
 <script>  
 function displayRandomImages()   
 {  
@@ -63,8 +68,8 @@ function displayRandomImages()
   document.body.appendChild(newImage);  
 }  
 </script>  
-</body>
   
+<body>  
 <div>  
 <center>  
 <h2 style="color:green"> Random Image Generator </h2>  
@@ -72,5 +77,6 @@ function displayRandomImages()
 <button onclick="displayRandomImages();"> Display Images </button>  
 </center>   
 </div> 
+   
   
 <?php include("footer.php");?>
