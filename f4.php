@@ -9,7 +9,7 @@
     <!-- Use audio tab to provide an id to sound for further using it in JavaScript code -->  
     <audio id="beepAudio" >   
     <!-- Provide a link of beep sound from internet -->  
-    <source src= "https://www.soundjay.com/button/sounds/beep-01a.mp3">   
+    <source src= "https://www.soundjay.com/buttons/sounds/button-4.mp3">   
     </audio>   
     <button onclick="beepSound()"> Click to beep </button>   
   
