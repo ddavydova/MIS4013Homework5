@@ -77,6 +77,6 @@ function displayRandomImages()
 <button onclick="displayRandomImages();"> Display Images </button>  
 </center>   
 </div> 
-   
+   </body>  
   
 <?php include("footer.php");?>
