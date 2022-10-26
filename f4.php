@@ -1,7 +1,6 @@
-<?php include("header.php");?>
 <?php include("links.php");?>
- 
-
+<html>  
+<head>  
 <script>  
   
 function ageCalculator() {  
@@ -90,7 +89,8 @@ function ageCalculator() {
   }  
 }  
 </script>  
-
+</head>  
+<body>  
 <center>  
 <h2 style="color: 32A80F" align="center"> Calculate Age from Date of Birth <br> <br> </h2>   
   
@@ -99,5 +99,5 @@ function ageCalculator() {
 <button type="submit" onclick = "ageCalculator()"> Calculate age </button> <br><br>  
 <h3 style="color:32A80F" id="result" align="center"></h3>   
 </center>  
-
-<?php include("footer.php");?>
+</body>  
+</html>
