@@ -1,6 +1,8 @@
 <?php include("header.php");?>
 <?php include("links.php");?>
 
+<br>
+<br>
 <audio src="https://www.soundjay.com/buttons/sounds/button-4.mp3" id="myAudio"></audio>
    <button onClick="playMyAudio()">Play Audio</button>
    <button onClick="pauseMyAudio()">Pause Audio</button>
