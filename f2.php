@@ -5,7 +5,7 @@
 #myContainer {  
   width: 350px;  
   height: 350px;  
-  position: center;  
+  position: relative;  
   background: green;  
 }  
 #myAnimation {  
