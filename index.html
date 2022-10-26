@@ -17,25 +17,30 @@
         document.getElementById('placeholder').innerHTML = 'This is the value';
       }
     </script>
-    var xArray = [50,60,70,80,90,100,110,120,130,140,150];
-var yArray = [7,8,8,9,9,9,10,11,14,14,15];
+    <script
+src="https://www.gstatic.com/charts/loader.js">
+      <div id="myChart" style="max-width:700px; height:400px"></div>
+       google.charts.load('current',{packages:['corechart']});
 
-// Define Data
-var data = [{
-  x: xArray,
-  y: yArray,
-  mode: "lines",
-  type: "scatter"
-}];
-
-// Define Layout
-var layout = {
-  xaxis: {range: [40, 160], title: "Square Meters"},
-  yaxis: {range: [5, 16], title: "Price in Millions"},
-  title: "House Prices vs Size"
+google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Price', 'Size'],
+  [50,7],[60,8],[70,8],[80,9],[90,9],[100,9],
+  [110,10],[120,11],[130,14],[140,14],[150,15]
+  ]);
+// Set Options
+var options = {
+  title: 'House Prices vs Size',
+  hAxis: {title: 'Square Meters'},
+  vAxis: {title: 'Price in Millions'},
+  legend: 'none'
 };
-
-// Display using Plotly
-Plotly.newPlot("myPlot", data, layout);
+// Draw Chart
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
   </body>
 </html>
