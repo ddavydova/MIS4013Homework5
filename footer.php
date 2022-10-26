@@ -20,5 +20,4 @@ echo "There are " . $d2 ." days until Christmas!";
   
 </div>
 
-</body>
 </html>
